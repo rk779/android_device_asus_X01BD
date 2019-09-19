@@ -169,18 +169,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
 
-# GPS / Location
+# Location
 PRODUCT_PACKAGES += \
-    libcurl \
-    libgnss \
-    libgnsspps \
-    libgps.utils \
-    liblocation_api \
-    libloc_core \
-    libloc_pla \
-    libsensorndkbridge \
-    libvehiclenetwork-native
+    libsensorndkbridge
 
+# GPS Configurations
 PRODUCT_PACKAGES += \
     apdr.conf \
     flp.conf \
